@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --white-color: hsl(0, 0%, 95%); /* to be used for body background, headings and buttons */
+    --white-par: hsla(0, 0%, 100%, 0.75) /* to be used for paragraphs */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white-color, white);
+    margin: 0;
+}
