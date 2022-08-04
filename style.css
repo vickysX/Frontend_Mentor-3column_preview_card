@@ -14,7 +14,7 @@
 
 body {
     margin: 0;
-    padding: 100px;
+    padding: 80px;
 }
 
 h1 {
@@ -26,13 +26,16 @@ h1 {
 p {
     color: var(--white-par, white);
     font-size: 15px;
+    line-height: 30px;
 }
 
 button {
     margin-bottom: 0;
+    margin-top: 20px;
     border: none;
     padding: 12.5px 20px;
     border-radius: 25px;
+    width: 50%;
 }
 
 .light-gray {
@@ -44,6 +47,9 @@ button {
 }
 
 .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 50px;
 }
 
@@ -51,8 +57,6 @@ button {
     display: flex;
     padding: 0;
     border-radius: 20px;
-    width: 80%;
-    height: 90%;
     margin: auto;
 }
 
