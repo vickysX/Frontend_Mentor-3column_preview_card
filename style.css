@@ -2,7 +2,10 @@
 
 :root {
     --white-color: hsl(0, 0%, 95%); /* to be used for body background, headings and buttons */
-    --white-par: hsla(0, 0%, 100%, 0.75) /* to be used for paragraphs */
+    --white-par: hsla(0, 0%, 100%, 0.75); /* to be used for paragraphs */
+    --sedans-color: hsl(31, 77%, 52%);
+    --suvs-color: hsl(184, 100%, 22%);
+    --luxury-color: hsl(179, 100%, 13%);
 }
 
 * {
@@ -10,6 +13,69 @@
 }
 
 body {
-    background-color: var(--white-color, white);
     margin: 0;
+    padding: 100px;
+}
+
+h1 {
+    color: var(--white-color, white);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+p {
+    color: var(--white-par, white);
+    font-size: 15px;
+}
+
+button {
+    margin-bottom: 0;
+    border: none;
+    padding: 12.5px 20px;
+    border-radius: 25px;
+}
+
+.light-gray {
+    background-color: var(--white-color, white);
+}
+
+.text {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.column {
+    padding: 50px;
+}
+
+#flex-container {
+    display: flex;
+    padding: 0;
+    border-radius: 20px;
+    width: 80%;
+    height: 90%;
+    margin: auto;
+}
+
+#sedans {
+    background-color: var(--sedans-color);
+}
+
+#sedans button {
+    color: var(--sedans-color);
+}
+
+#suvs {
+    background-color: var(--suvs-color);
+}
+
+#suvs button {
+    color: var(--suvs-color);
+}
+
+#luxury {
+    background-color: var(--luxury-color);
+}
+
+#luxury button {
+    color: var(--luxury-color);
 }
